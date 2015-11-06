@@ -1,0 +1,19 @@
+
+{% if site.data.social %}
+<ul class="list-unstyled list-inline social-icons">
+
+{% for socialLink in site.data.social %}
+  {% if socialLink.icon %}
+    <li class="hidden-xs hidden-sm">
+      <a href="{{ socialLink.url }}" target="_blank">
+        <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
+        <i class="{{ socialLink.icon }} fa-stack" title="{{ socialLink.title }}"></i>
+        </span>
+      </a>
+    </li>
+  {% endif %}
+{% endfor %}
+
+</ul>
+{% endif %}

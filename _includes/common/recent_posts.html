@@ -1,0 +1,28 @@
+
+<div class="recent-posts">
+  {% for post in site.posts limit:5 %}
+  <div class="row post-list-item">
+    <div class="col-md-3">
+      <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+    </div><!-- /.col -->
+    <div class="col-md-9">
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+        <p>{{ post.title }}</p>
+      </a>
+    </div><!-- /.col -->
+  </div><!-- /.post-list-item -->
+  {% endfor %}
+</div><!-- /.recent-posts -->
+
+<div class="row recent-posts-summary">
+  <div class="col-md-3">
+    <p class="rss">
+      <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="fa fa-rss"></i> RSS</a>
+    </p>
+  </div><!-- /.col -->
+  <div class="col-md-9">
+    <p class="all-posts">
+      <a href="{{ "/blog/" | prepend: site.baseurl }}">All Posts</a>
+    </p>
+  </div><!-- /.col -->
+</div><!-- /.row -->

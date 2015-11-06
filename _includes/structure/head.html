@@ -1,0 +1,33 @@
+<head>
+  {% include common/ascii.html %}
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="{{ site.description }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ site.description }}" />
+  <meta property="og:url" content="{{ site.url }}" />
+  <meta property="og:site_name" content="{{ site.title }}" />
+  <meta property="fb:admins" content="" />
+  <meta property="og:image" content="{{ site.baseurl }}/{{ site.favicon }}" />
+  <meta name="twitter:card" content="{{ site.description }}"/>
+  <meta name="twitter:site" content="@{{ site.twitter-username }}"/>
+  <meta name="twitter:domain" content="{{ site.title }}"/>
+  <meta name="twitter:creator" content="@{{ site.twitter-username }}"/>
+
+  <link rel="shortcut icon" href="{{ site.baseurl }}{{ site.favicon }}">
+
+  <!-- css -->
+  <link rel="stylesheet" href="{{ "/assets/vendors/bootstrap/dist/css/bootstrap.min.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/assets/vendors/fontawesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/assets/vendors/animate.css/animate.min.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/assets/css/custom.css" | prepend: site.baseurl }}">
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+</head>

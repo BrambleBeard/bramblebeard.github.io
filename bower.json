@@ -1,0 +1,25 @@
+{
+  "name": "dereknutile.com",
+  "version": "0.3.0",
+  "homepage": "https://dereknutile.com/",
+  "authors": [
+    "Derek Nutile <dereknutile@gmail.com>"
+  ],
+  "description": "Bramblebeard",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": null,
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5",
+    "fontawesome": "~4.4.0",
+    "list.js": "~1.1.1"
+  }
+}
