@@ -5,11 +5,8 @@ sass assets/scss/custom.scss:assets/css/custom.css --style compact
 Use this sass command to create a minified stylesheet.
 sass assets/scss/custom.scss:assets/css/custom.min.css --style compressed
 */
-
 /* rem conversion cheatsheet */
-/*
- 8px = 0.5rem
- 9px = 0.5625rem
+/* 8px = 0.5rem 9px = 0.5625rem
 10px = 0.625rem
 11px = 0.6875rem
 12px = 0.75rem
@@ -20,104 +17,53 @@ sass assets/scss/custom.scss:assets/css/custom.min.css --style compressed
 18px = 1.125rem
 20px = 1.25rem
 */
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* fonts
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
 /* common or base font */
 @import url(http://fonts.googleapis.com/css?family=Dosis);
-$fontBasePrimary: 'Dosis', Helvetica, Arial, sans-serif;
-
 /* secondary or print font */
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
-$fontPrintPrimary: 'Roboto Slab', Times, serif;
 @import url(http://fonts.googleapis.com/css?family=Raleway);
-$fontPrintSecondary: 'Raleway', Times, serif;
-
 /* font for script, cursive, or fancy rendering */
 @import url(http://fonts.googleapis.com/css?family=Kaushan+Script);
-$fontFancyPrimary: 'Kaushan Script';
-
 /* technical, typewriter, monospace font typically used for pre or code tags */
 @import url(http://fonts.googleapis.com/css?family=Inconsolata);
-$fontMonoPrimary: 'Inconsolata', Courier, monospace;
-
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* colors
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
 /* base white or black colors or variants */
-$colorLight: #fdfdfd; /*pale white*/
-$colorDark: #001;
-$colorBlack: #27343d; /*dark slate*/
-
-$colorPrimary: #222222; /*black-gray*/
-$colorSecondary: #4882ad; /*steel blue*/
-$colorHighlightPrimary: #ddd;
-$colorHighlightSecondary: #eee;
-
-
+/*pale white*/
+/*dark slate*/
+/*black-gray*/
+/*steel blue*/
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* resets
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-* {
-  margin: 0;
-  padding: 0;
-}
+* { margin: 0; padding: 0; }
 
 html, body { height: 100%; }
 
-body {
-  font-family: $fontBasePrimary;
-}
+body { font-family: "Dosis", Helvetica, Arial, sans-serif; }
 
-h1, h2, h3, h4, h5, h6 {
-}
-
-p, ul, ol {
-  font-size: 1.25rem;
-  font-weight: 100;
-  font-family: $fontBasePrimary;
-  line-height: 1.5rem;
-}
+p, ul, ol { font-size: 1.25rem; font-weight: 100; font-family: "Dosis", Helvetica, Arial, sans-serif; line-height: 1.5rem; }
 
 /* links */
-a { color: lighten( $colorBlack, 8% ); }
-a:hover {
-  color: lighten( $colorDark, 15% );
-  text-decoration: none;
-}
-a:visited { color: lighten( $colorBlack, 8% ); }
+a { color: #374956; }
 
-.content{
-  border-top: 3em solid $colorDark;
-}
+a:hover { color: #00005e; text-decoration: none; }
 
-.body-navbar-padding {
-    margin-top: 4em;
-}
+a:visited { color: #374956; }
+
+.content { border-top: 3em solid #001; }
+
+.body-navbar-padding { margin-top: 4em; }
+
 /*****************************************************************************/
 /* Bootstrap overrides
 /*****************************************************************************/
-.container {
-}
+.container-full { margin: 0 auto; width: 100%; padding-left: 0rem; padding-right: 0rem; margin-left: 0rem; margin-right: 0rem; }
 
-.container-full {
-  margin: 0 auto;
-  width: 100%;
-  padding-left: 0rem;
-  padding-right: 0rem;
-  margin-left: 0rem;
-  margin-right: 0rem;
-}
+.container-narrow { width: 760px; margin-right: auto; margin-left: auto; }
 
-$container-narrow-width: 760px;
-
-.container-narrow {
-  width: $container-narrow-width;
-  margin-right: auto;
-  margin-left: auto;
-}
+/*# sourceMappingURL=custom.css.map */
