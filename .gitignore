@@ -4,3 +4,4 @@ _site
 *~
 /.vagrant
 .jekyll-metadata
+*.css.map
