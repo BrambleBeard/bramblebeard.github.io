@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html>
 
-  {% include structure/head.html %}
+  {% include framing/head.html %}
 
-  <body class="body-navbar-padding">
+    <body class="body-navbar-padding">
 
-    {% include common/header.html %}
+    {% include framing/main_navigation.html %}
+    {% include framing/header.html %}
 
-    <div class="content">
+    <div class="page-content">
       {{ content }}
-    </div><!-- /.content -->
+    </div>
 
-    {% include common/footer.html %}
+    {% include framing/footer.html %}
 
-  </body>
-
-  {% include structure/scripts.html %}
-  {% include structure/analytics.html %}
-
+    </body>
 </html>
