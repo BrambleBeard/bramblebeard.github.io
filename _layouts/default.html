@@ -3,16 +3,14 @@
 
   {% include framing/head.html %}
 
-    <body class="body-navbar-padding">
+    <body>
 
-    {% include framing/main_navigation.html %}
-    {% include framing/header.html %}
-
-    <div class="page-content">
+    <div id="layout">
       {{ content }}
     </div>
-
-    {% include framing/footer.html %}
+    <!-- #layout -->
 
     </body>
+
+    {% include structure/scripts.html %}
 </html>
