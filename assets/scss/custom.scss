@@ -54,7 +54,7 @@ $colorDark: #001;
 $colorBlack: #27343d; /*dark slate*/
 
 $colorPrimary: #222222; /*black-gray*/
-$colorSecondary: #4882ad; /*steel blue*/
+$colorSecondary: #a3a380;
 $colorHighlightPrimary: #ddd;
 $colorHighlightSecondary: #eee;
 
@@ -63,7 +63,7 @@ $colorHighlightSecondary: #eee;
 /* pixels
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-$menuWidth: 200px;
+$menuWidth: 150px;
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* resets
@@ -71,8 +71,21 @@ $menuWidth: 200px;
 
 body {
     color: $colorDark;
+    font-family: $fontBasePrimary;
 }
 
+p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $fontPrintPrimary;
+}
+
+code,pre {
+    font-family: $fontMonoPrimary;
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* custom
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -115,10 +128,9 @@ body {
 
 .header {
      margin: 0;
-     color: #333;
+     color: $colorPrimary;
      text-align: center;
      padding: 2.5em 2em 0;
-     border-bottom: 1px solid #eee;
 }
 .header h1 {
     margin: 0.2em 0;
@@ -127,7 +139,7 @@ body {
 }
  .header h2 {
     font-weight: 300;
-    color: #ccc;
+    color: lighten( $colorPrimary, 8% );
     padding: 0;
     margin-top: 0;
 }
@@ -135,10 +147,11 @@ body {
 .content-subhead {
     margin: 50px 0 20px 0;
     font-weight: 300;
-    color: #888;
+    color: lighten( $colorDark, 12% );
 }
 
 #menu {
+    font-family: $fontMonoPrimary;
     margin-left: -$menuWidth; /* "#menu" width */
     width: $menuWidth;
     position: fixed;
@@ -146,7 +159,7 @@ body {
     left: 0;
     bottom: 0;
     z-index: 1000; /* so the menu or its navicon stays above all content */
-    background: #191818;
+    background: $colorSecondary;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 }
@@ -154,9 +167,9 @@ body {
     All anchors inside the menu should be styled like this.
     */
     #menu a {
-        color: #999;
+        color: $colorBlack;
         border: none;
-        padding: 0.6em 0 0.6em 0.6em;
+        padding: 0.6em 0.3em;
     }
 
     /*
@@ -173,14 +186,14 @@ body {
     */
     #menu .pure-menu ul,
     #menu .pure-menu .menu-item-divided {
-        border-top: 1px solid #333;
     }
         /*
         Change color of the anchor links on hover/focus.
         */
         #menu .pure-menu li a:hover,
         #menu .pure-menu li a:focus {
-            background: #333;
+            color: $colorLight;
+            background: darken( $colorSecondary, 30% );
         }
 
     /*
@@ -188,7 +201,7 @@ body {
     */
     #menu .pure-menu-selected,
     #menu .pure-menu-heading {
-        background: #1f8dd6;
+        // background: #fff;
     }
         /*
         This styles a link within a selected menu item `<li>`.
@@ -206,6 +219,7 @@ body {
         margin: 0;
     }
 
+
 /* -- Dynamic Button For Responsive Menu -------------------------------------*/
 
 /*
@@ -222,8 +236,8 @@ small screens.
     display: block; /* show this only on small screens */
     top: 0;
     left: 0; /* "#menu width" */
-    background: #000;
-    background: rgba(0,0,0,0.7);
+    background: $colorSecondary;
+    // background: rgba(0,0,0,0.7);
     font-size: 10px; /* change this value to increase/decrease button size */
     z-index: 10;
     width: 2em;
@@ -233,7 +247,7 @@ small screens.
 
     .menu-link:hover,
     .menu-link:focus {
-        background: #000;
+        background: darken( $colorSecondary, 22% );
     }
 
     .menu-link span {
@@ -304,4 +318,17 @@ Hides the menu at `48em`, but modify this based on your app's needs.
         position: relative;
         left: $menuWidth;
     }
+}
+
+
+.pure-img-logo {
+    -webkit-filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.5));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=3, OffY=3, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=3, OffY=3, Color='#444')";
+}
+
+.pure-menu-list {
+    margin-top: 2em;
+    text-align: center;
 }
