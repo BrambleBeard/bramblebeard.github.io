@@ -1,16 +1,35 @@
-$(document).ready(function(){
+(function (window, document) {
 
-  var text = $(".swap-text");
-  var textIndex = -1;
+    var layout   = document.getElementById('layout'),
+        menu     = document.getElementById('menu'),
+        menuLink = document.getElementById('menuLink');
 
-  function swapText() {
-    ++textIndex;
-    text.eq(textIndex % text.length)
-      .fadeIn(1400)
-      .delay(1600)
-      .fadeOut(900, swapText);
-  }
+    function toggleClass(element, className) {
+        var classes = element.className.split(/\s+/),
+            length = classes.length,
+            i = 0;
 
-  swapText();
+        for(; i < length; i++) {
+          if (classes[i] === className) {
+            classes.splice(i, 1);
+            break;
+          }
+        }
+        // The className is not found
+        if (length === classes.length) {
+            classes.push(className);
+        }
 
-});
+        element.className = classes.join(' ');
+    }
+
+    menuLink.onclick = function (e) {
+        var active = 'active';
+
+        e.preventDefault();
+        toggleClass(layout, active);
+        toggleClass(menu, active);
+        toggleClass(menuLink, active);
+    };
+
+}(this, this.document));
