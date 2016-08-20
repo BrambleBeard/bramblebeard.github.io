@@ -130,7 +130,7 @@ code,pre {
      margin: 0;
      color: $colorPrimary;
      text-align: center;
-     padding: 2.5em 2em 0;
+     padding: 1em 1em;
 }
 .header h1 {
     margin: 0.2em 0;
@@ -331,4 +331,8 @@ Hides the menu at `48em`, but modify this based on your app's needs.
 .pure-menu-list {
     margin-top: 2em;
     text-align: center;
+}
+
+#rich-text-editor {
+  height: 15em;
 }
