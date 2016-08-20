@@ -12,5 +12,8 @@
 
     </body>
 
-    {% include structure/scripts.html %}
+    {% include framing/scripts.html %}
+    {% if page.rte %}
+        <script src="{{ site.baseurl }}/assets/js/rte.js"></script>
+    {% endif %}
 </html>
