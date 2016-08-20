@@ -14,6 +14,6 @@
     "commit": "79fadc84fcacc1c46d7ab6f2e877314ba33c47aa"
   },
   "_source": "https://github.com/yui/pure.git",
-  "_target": "*",
+  "_target": "0.6.0",
   "_originalSource": "purecss"
 }
