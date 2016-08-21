@@ -336,3 +336,21 @@ Hides the menu at `48em`, but modify this based on your app's needs.
 #rich-text-editor {
   height: 15em;
 }
+
+.action-bar {
+    float: right;
+    margin-top: 1em;
+}
+
+.input-flatten {
+    margin-top: 1em;
+    padding: .5em .6em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: none;
+    border-radius: 0px;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
