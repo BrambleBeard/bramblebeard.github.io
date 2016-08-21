@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 
-{% include framing/head.html %}
+  {% include framing/head.html %}
 
-<body>
+    <body>
 
-    <div class="page-content">
+        <div id="simpleLayout">
+            {{ content }}
+        </div>
+        <!-- #layout -->
 
-    {{ content }}
+    </body>
 
-    </div>
-
-</body>
+    {% include framing/scripts.html %}
 </html>

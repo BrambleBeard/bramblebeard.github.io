@@ -5,10 +5,11 @@
 
     <body>
 
-    <div id="layout">
-      {{ content }}
-    </div>
-    <!-- #layout -->
+        <div id="layout">
+            {% include common/main_navigation.html %}
+            {{ content }}
+        </div>
+        <!-- #layout -->
 
     </body>
 
