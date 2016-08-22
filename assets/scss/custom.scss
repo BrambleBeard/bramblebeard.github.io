@@ -358,3 +358,14 @@ Hides the menu at `48em`, but modify this based on your app's needs.
 li.pure-menu-item.active {
     background: darken( $colorSecondary, 8% );
 }
+
+.well {
+    border: 1px solid darken( $colorLight, 12% );
+    background: darken( $colorLight, 4% );
+    padding: 1em;
+}
+
+.narrow-container {
+    margin: 0 auto;
+    max-width: 500px;
+}
