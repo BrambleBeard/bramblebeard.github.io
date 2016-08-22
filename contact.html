@@ -1,15 +1,16 @@
 ---
 layout: default
+title: Contact Page
 active: contact
 ---
 
 <div id="main">
     <div class="header">
         <h1>{{ site.title }}</h1>
-        <h2>{{ site.tagline }}</h2>
+        <h2>{{ page.title }}</h2>
     </div>
 
     <div class="content">
-        <p>Contact page.</p>
+        {% include common/contact.html %}
     </div>
 </div>
