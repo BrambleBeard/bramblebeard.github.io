@@ -12,10 +12,16 @@
         </a>
 
         <ul class="pure-menu-list">
-            <li class="pure-menu-item"><a href="{{ site.baseUrl }}/" class="pure-menu-link">Home</a></li>
-            <li class="pure-menu-item"><a href="{{ site.baseUrl }}/about" class="pure-menu-link">About</a></li>
-            <li class="pure-menu-item"><a href="{{ site.baseUrl }}/contact" class="pure-menu-link">Contact</a></li>
-            <li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
+            <li class="pure-menu-item{% if page.active == 'home' %} active{% endif %}">
+                <a href="{{ site.baseUrl }}/" class="pure-menu-link">Home</a>
+            </li>
+            <li class="pure-menu-item{% if page.active == 'about' %} active{% endif %}">
+                <a href="{{ site.baseUrl }}/about" class="pure-menu-link">About</a>
+            </li>
+            <li class="pure-menu-item{% if page.active == 'contact' %} active{% endif %}">
+                <a href="{{ site.baseUrl }}/contact" class="pure-menu-link">Contact</a>
+            </li>
+            <li class="pure-menu-item{% if page.active == 'login' %} active{% endif %}" class="menu-item-divided pure-menu-selected">
                 <a href="{{ site.baseUrl }}/login" class="pure-menu-link">Sign-in</a>
             </li>
         </ul>
