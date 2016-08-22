@@ -1,18 +1,22 @@
 
-<form class="pure-form pure-form-stacked">
-    <fieldset>
+<div class="narrow-container well">
+    <form class="pure-form pure-form-stacked">
+        <fieldset>
+            <div class="pure-u-1">
+                <label for="email">Email</label>
+                <input class="pure-input-1" type="email" placeholder="Email">
+            </div>
 
-        <div class="pure-u-1">
-            <input class="pure-input-1" type="email" placeholder="Email">
-        </div>
+            <div class="pure-u-1">
+                <label for="password">Password</label>
+                <input class="pure-input-1" type="password" placeholder="Password">
+            </div>
 
-        <div class="pure-u-1">
-            <input class="pure-input-1" type="password" placeholder="Password">
-        </div>
-
-        <div class="action-bar">
-            <a href="{{ site.baseurl }}/" class="pure-button">Cancel</a>
-            <button type="submit" class="pure-button pure-button-primary">Sign in</button>
-        </div>
-    </fieldset>
-</form>
+            <div class="action-bar">
+                <a href="{{ site.baseurl }}/" class="pure-button">Cancel</a>
+                <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+<!-- /.narrow-container -->
