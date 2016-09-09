@@ -5,7 +5,6 @@ sass assets/scss/custom.scss:assets/css/custom.css --style compact
 Use this sass command to create a minified stylesheet.
 sass assets/scss/custom.scss:assets/css/custom.min.css --style compressed
 */
-
 /* rem conversion cheatsheet */
 /*
  8px = 0.5rem
@@ -20,55 +19,44 @@ sass assets/scss/custom.scss:assets/css/custom.min.css --style compressed
 18px = 1.125rem
 20px = 1.25rem
 */
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* fonts
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
 /* common or base font */
 @import url(http://fonts.googleapis.com/css?family=Dosis);
 $fontBasePrimary: 'Dosis', Helvetica, Arial, sans-serif;
-
 /* secondary or print font */
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
 $fontPrintPrimary: 'Roboto Slab', Times, serif;
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 $fontPrintSecondary: 'Raleway', Times, serif;
-
 /* font for script, cursive, or fancy rendering */
 @import url(http://fonts.googleapis.com/css?family=Kaushan+Script);
 $fontFancyPrimary: 'Kaushan Script';
-
 /* technical, typewriter, monospace font typically used for pre or code tags */
 @import url(http://fonts.googleapis.com/css?family=Inconsolata);
 $fontMonoPrimary: 'Inconsolata', Courier, monospace;
-
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* colors
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
 /* base white or black colors or variants */
-$colorLight: #fdfdfd; /*pale white*/
+$colorLight: #fdfdfd;
+/*pale white*/
 $colorDark: #001;
-$colorBlack: #27343d; /*dark slate*/
-
-$colorPrimary: #222222; /*black-gray*/
+$colorBlack: #27343d;
+/*dark slate*/
+$colorPrimary: #222222;
+/*black-gray*/
 $colorSecondary: #a3a380;
 $colorHighlightPrimary: #ddd;
 $colorHighlightSecondary: #eee;
-
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* pixels
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
 $menuWidth: 150px;
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* resets
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
 body {
     color: $colorDark;
     font-family: $fontBasePrimary;
@@ -79,23 +67,30 @@ p {
     line-height: 1.5em;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: $fontPrintPrimary;
 }
 
-code,pre {
+code,
+pre {
     font-family: $fontMonoPrimary;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* custom
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
 }
 
-#layout, #menu, .menu-link {
+#layout,
+#menu,
+.menu-link {
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -ms-transition: all 0.2s ease-out;
@@ -117,7 +112,6 @@ code,pre {
     left: $menuWidth;
 }
 
-
 .content {
     margin: 0 auto;
     padding: 0 2em;
@@ -127,17 +121,19 @@ code,pre {
 }
 
 .header {
-     margin: 0;
-     color: $colorPrimary;
-     text-align: center;
-     padding: 1em 1em;
+    margin: 0;
+    color: $colorPrimary;
+    text-align: center;
+    padding: 1em;
 }
+
 .header h1 {
     margin: 0.2em 0;
     font-size: 3em;
     font-weight: 300;
 }
- .header h2 {
+
+.header h2 {
     font-weight: 300;
     color: lighten( $colorPrimary, 8% );
     padding: 0;
@@ -145,153 +141,147 @@ code,pre {
 }
 
 .content-subhead {
-    margin: 50px 0 20px 0;
+    margin: 50px 0 20px;
     font-weight: 300;
     color: lighten( $colorDark, 12% );
 }
 
 #menu {
     font-family: $fontMonoPrimary;
-    margin-left: -$menuWidth; /* "#menu" width */
+    margin-left: -$menuWidth;
+    /* "#menu" width */
     width: $menuWidth;
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
-    z-index: 1000; /* so the menu or its navicon stays above all content */
+    z-index: 1000;
+    /* so the menu or its navicon stays above all content */
     background: $colorSecondary;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 }
-    /*
+/*
     All anchors inside the menu should be styled like this.
     */
-    #menu a {
-        color: $colorBlack;
-        border: none;
-        padding: 0.6em 0.3em;
-    }
-
-    /*
+#menu a {
+    color: $colorBlack;
+    border: none;
+    padding: 0.6em 0.3em;
+}
+/*
     Remove all background/borders, since we are applying them to #menu.
     */
-     #menu .pure-menu,
-     #menu .pure-menu ul {
-        border: none;
-        background: transparent;
-    }
-
-    /*
+#menu .pure-menu,
+#menu .pure-menu ul {
+    border: none;
+    background: transparent;
+}
+/*
     Add that light border to separate items into groups.
     */
-    #menu .pure-menu ul,
-    #menu .pure-menu .menu-item-divided {
-    }
-        /*
+#menu .pure-menu .menu-item-divided,
+#menu .pure-menu ul {}
+/*
         Change color of the anchor links on hover/focus.
         */
-        #menu .pure-menu li a:hover,
-        #menu .pure-menu li a:focus {
-            color: $colorLight;
-            background: darken( $colorSecondary, 30% );
-        }
-
-    /*
+#menu .pure-menu li a:focus,
+#menu .pure-menu li a:hover {
+    color: $colorLight;
+    background: darken( $colorSecondary, 30% );
+}
+/*
     This styles the selected menu item `<li>`.
     */
-    #menu .pure-menu-selected,
-    #menu .pure-menu-heading {
-        // background: #fff;
-    }
-        /*
+#menu .pure-menu-heading,
+#menu .pure-menu-selected {
+    // background: #fff;
+}
+/*
         This styles a link within a selected menu item `<li>`.
         */
-        #menu .pure-menu-selected a {
-            color: #fff;
-        }
-
-    /*
+#menu .pure-menu-selected a {
+    color: #fff;
+}
+/*
     This styles the menu heading.
     */
-    #menu .pure-menu-heading {
-        font-size: 110%;
-        color: #fff;
-        margin: 0;
-    }
-
-
+#menu .pure-menu-heading {
+    font-size: 110%;
+    color: #fff;
+    margin: 0;
+}
 /* -- Dynamic Button For Responsive Menu -------------------------------------*/
-
 /*
 The button to open/close the Menu is custom-made and not part of Pure. Here's
 how it works:
 */
-
 /*
 `.menu-link` represents the responsive menu toggle that shows/hides on
 small screens.
 */
 .menu-link {
     position: fixed;
-    display: block; /* show this only on small screens */
+    display: block;
+    /* show this only on small screens */
     top: 0;
-    left: 0; /* "#menu width" */
+    left: 0;
+    /* "#menu width" */
     background: $colorSecondary;
     // background: rgba(0,0,0,0.7);
-    font-size: 10px; /* change this value to increase/decrease button size */
+    font-size: 10px;
+    /* change this value to increase/decrease button size */
     z-index: 10;
     width: 2em;
     height: auto;
     padding: 2.1em 1.6em;
 }
 
-    .menu-link:hover,
-    .menu-link:focus {
-        background: darken( $colorSecondary, 22% );
-    }
+.menu-link:focus,
+.menu-link:hover {
+    background: darken( $colorSecondary, 22% );
+}
 
-    .menu-link span {
-        position: relative;
-        display: block;
-    }
+.menu-link span {
+    position: relative;
+    display: block;
+}
 
-    .menu-link span,
-    .menu-link span:before,
-    .menu-link span:after {
-        background-color: #fff;
-        width: 100%;
-        height: 0.2em;
-    }
+.menu-link span,
+.menu-link span:after,
+.menu-link span:before {
+    background-color: #fff;
+    width: 100%;
+    height: 0.2em;
+}
 
-        .menu-link span:before,
-        .menu-link span:after {
-            position: absolute;
-            margin-top: -0.6em;
-            content: " ";
-        }
+.menu-link span:after,
+.menu-link span:before {
+    position: absolute;
+    margin-top: -0.6em;
+    content: " ";
+}
 
-        .menu-link span:after {
-            margin-top: 0.6em;
-        }
-
-
+.menu-link span:after {
+    margin-top: 0.6em;
+}
 /* -- Responsive Styles (Media Queries) ------------------------------------- */
-
 /*
 Hides the menu at `48em`, but modify this based on your app's needs.
 */
 @media (min-width: 48em) {
-
-    .header,
-    .content {
+    .content,
+    .header {
         padding-left: 2em;
         padding-right: 2em;
     }
 
     #layout {
-        padding-left: $menuWidth; /* left col width "#menu" */
+        padding-left: $menuWidth;
+        /* left col width "#menu" */
         left: 0;
     }
+
     #menu {
         left: $menuWidth;
     }
@@ -306,7 +296,6 @@ Hides the menu at `48em`, but modify this based on your app's needs.
         left: $menuWidth;
     }
 }
-
 @media (max-width: 48em) {
     /* Only apply this when the window is small. Otherwise, the following
     case results in extra padding on the left:
@@ -320,12 +309,11 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     }
 }
 
-
 .pure-img-logo {
     -webkit-filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.5));
     filter: url(#drop-shadow);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=3, OffY=3, Color='#444')";
-    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=3, OffY=3, Color='#444')";
+    -ms-filter:  "progid:DXImageTransform.Microsoft.Dropshadow(OffX=3, OffY=3, Color='#444')";
+    filter:  "progid:DXImageTransform.Microsoft.Dropshadow(OffX=3, OffY=3, Color='#444')";
 }
 
 .pure-menu-list {
@@ -334,7 +322,7 @@ Hides the menu at `48em`, but modify this based on your app's needs.
 }
 
 #rich-text-editor {
-  height: 15em;
+    height: 15em;
 }
 
 .action-bar {
@@ -344,11 +332,11 @@ Hides the menu at `48em`, but modify this based on your app's needs.
 
 .input-flatten {
     margin-top: 1em;
-    padding: .5em .6em;
+    padding: 0.5em 0.6em;
     display: inline-block;
     border: 1px solid #ccc;
     box-shadow: none;
-    border-radius: 0px;
+    border-radius: 0;
     vertical-align: middle;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
