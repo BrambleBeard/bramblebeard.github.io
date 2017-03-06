@@ -1,5 +1,5 @@
 # BrambleBeard Mockup
+Mockup for the [BrambleBeard application](https://github.com/BrambleBeard/app).
 
-## Bramblebeard mock-up using Jekyll.
-
-[http://bramblebeard.github.io](http://bramblebeard.github.io)
+## Screenshot
+![Toolbox Dashboard](https://github.com/dereknutile/bramblebeard-mockup/blob/master/assets/img/screenshot.png)
