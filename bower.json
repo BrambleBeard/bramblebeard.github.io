@@ -13,15 +13,15 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "docs",
+    "_layouts",
+    "_includes",
+    "Gruntfile.js",
+    "Vagrantfile",
+    "_config*"
   ],
   "dependencies": {
-    "animate.css": null,
-    "jquery": "~2.1.4",
-    "bootstrap": "~3.3.5",
-    "fontawesome": "~4.4.0",
-    "list.js": "~1.1.1",
-    "purecss": "0.6.0",
-    "summernote": ""
+    "bulma": "^0.3.2"
   }
 }
