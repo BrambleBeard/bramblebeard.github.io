@@ -1,25 +1,31 @@
 ---
 layout: default
-rte: true
 active: home
 ---
 
-<div id="main">
-    <div class="header">
-        <h1>{{ site.title }}</h1>
-        <h2>{{ site.tagline }}</h2>
+<section class="section">
+    <div class="container container-narrow">
+        <div class="heading">
+            <h1 class="title">{{ site.title }}</h1>
+            <h2 class="subtitle">{{ site.description }}</h2>
+        </div>
     </div>
+</section>
 
-    <div class="content">
-        <form class="pure-form">
-            <div id="toolbar"></div>
-            <div id="rich-text-editor"></div>
-            <input class="pure-input-1 input-flatten" type="text" placeholder="Use an optional password">
-            <div class="action-bar">
-                <button class="pure-button">Save</button>
-                <button class="pure-button">Email</button>
-                <button class="pure-button pure-button-primary">Create</button>
+<section class="section">
+    <div class="container container-narrow">
+        <form action="">
+            <div class="control">
+                <textarea class="textarea" placeholder="Enter your secret here ..."></textarea>
+            </div>
+            <div class="control">
+                <input class="input" type="text" placeholder="Optionally, provide a password ...">
+            </div>
+            <div class="control push-right">
+                <button class="button is-default">Save</button>
+                <button class="button is-default">Send</button>
+                <button class="button is-primary">Create</button>
             </div>
         </form>
     </div>
-</div>
+</section>
