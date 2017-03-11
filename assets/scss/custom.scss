@@ -87,6 +87,12 @@ pre {
     max-width: 50%;
 }
 
+@media screen and (max-width: 999px) {
+    .container-narrow {
+        max-width: 100%;
+    }
+}
+
 .push-right {
     float: right;
     right: 0;
