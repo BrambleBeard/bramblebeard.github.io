@@ -1,14 +1,10 @@
-
-<footer>
-    <div class="horizontal-padding-extra-large">
+<footer class="hero is-dark is-medium">
+    <div class="hero-body">
         <div class="container">
-            <div class="row background-opaque horizontal-padding-small">
-                <p class="text-center">Copyright &copy; {{ site.time | date: '%Y' }} &mdash; {{ site.tagline }}</p>
-                <p class="text-center">Maintained by <a href="http://dereknutile.com/" target="_blank">Derek Nutile</a> here <a href="https://github.com/dereknutile/mockmach" target="_blank">https://github.com/dereknutile/mockmach</a>.</p>
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </div><!-- /.horizontal-padding -->
+            <div class="content has-text-centered">
+                <p>Find out more <a href="/about">about {{ site.title }}</a>, check out the <a href="{{ site.sourceUrl }}" target="_blank">source code</a>, or <a href="/contact">connect with us</a>.
+                </p>
+            </div>
+        </div>
+    </div>
 </footer>
-
-{% include framing/scripts.html %}
-{% include framing/analytics.html %}
