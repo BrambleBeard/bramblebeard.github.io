@@ -1,11 +1,12 @@
 title: Bramble Beard
 email: hi@dereknutile.com
-description: Web application to store secret information securely.
+description: Web application to securely store and share secret information.
 tagline: Securely shove your secrets in the brambly beard.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: ""
 favicon: "/assets/ico/favicon.png"
 url: "http://bramblebeard.github.io/"
+sourceUrl: "https://github.com/BrambleBeard/app"
 facebook-username: "dereknutile"
 twitter-username: "dereknutile"
-gootgle-plus-username: "+dereknutile"
+google-plus-username: "+dereknutile"
 google-analytics: "UA-CODE-GOES-HERE"
