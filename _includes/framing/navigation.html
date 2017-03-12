@@ -1,4 +1,4 @@
-<nav class="nav has-shadow">
+<nav class="nav">
     <div class="container">
         <div class="nav-left">
             <a class="nav-item" href="/">
@@ -15,9 +15,9 @@
         <!-- .nav-toggle -->
 
         <div class="nav-right nav-menu">
-            <a class="nav-item is-tab" href="/about">About</a>
-            <a class="nav-item is-tab" href="/contact">Contact</a>
-            <a class="nav-item is-tab" href="/login">Account</a>
+            <a class="nav-item is-tab{% if page.active=='generator' %} is-active{% endif %}" href="/generator">Generator</a>
+            <a class="nav-item is-tab{% if page.active=='saved' %} is-active{% endif %}" href="/saved">Saved</a>
+            <a class="nav-item is-tab{% if page.active=='account' %} is-active{% endif %}" href="/account">Account</a>
         </div>
         <!-- .nav-right -->
     </div>
