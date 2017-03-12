@@ -23,17 +23,11 @@ sass assets/scss/custom.scss:assets/css/custom.min.css --style compressed
 /* fonts
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* common or base font */
-@import url(http://fonts.googleapis.com/css?family=Dosis);
-$fontBasePrimary: 'Dosis', Helvetica, Arial, sans-serif;
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+$fontBasePrimary: 'Open Sans', Helvetica, Arial, sans-serif;
 /* secondary or print font */
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
-$fontPrintPrimary: 'Roboto Slab', Times, serif;
-@import url(http://fonts.googleapis.com/css?family=Raleway);
-$fontPrintSecondary: 'Raleway', Times, serif;
-/* font for script, cursive, or fancy rendering */
-@import url(http://fonts.googleapis.com/css?family=Kaushan+Script);
-$fontFancyPrimary: 'Kaushan Script';
-/* technical, typewriter, monospace font typically used for pre or code tags */
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+$fontPrintPrimary: 'Bree Serif', Times, serif;
 @import url(http://fonts.googleapis.com/css?family=Inconsolata);
 $fontMonoPrimary: 'Inconsolata', Courier, monospace;
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -81,6 +75,13 @@ pre {
     font-family: $fontMonoPrimary;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* framework overrides
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.heading {
+    text-transform: none;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* custom
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .container-narrow {
@@ -96,4 +97,16 @@ pre {
 .push-right {
     float: right;
     right: 0;
+}
+
+footer {
+    margin-top: 3em;
+}
+
+footer.hero p {
+    color: $colorSecondary;
+}
+
+footer.hero a, footer.hero a:active, footer.hero a:visited {
+    color: $colorHighlightSecondary;
 }
