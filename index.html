@@ -3,28 +3,28 @@ layout: default
 active: home
 ---
 
-<section class="section">
+<section class="section header">
     <div class="container container-narrow">
         <div class="heading">
             <h1 class="title">{{ site.title }}</h1>
-            <h2 class="subtitle">{{ site.description }}</h2>
+            <h2 class="subtitle">{{ site.tagline }}</h2>
         </div>
     </div>
 </section>
 
 <section class="section">
     <div class="container container-narrow">
-        <form action="">
+        <form action="example">
             <div class="control">
-                <textarea class="textarea" placeholder="Enter your secret here ..."></textarea>
+                <textarea class="textarea" placeholder="Enter your secret here ..." required="required"></textarea>
             </div>
             <div class="control">
                 <input class="input" type="text" placeholder="Optionally, provide a password ...">
             </div>
             <div class="control push-right">
-                <button class="button is-default is-disabled">Save</button>
+                <button class="button is-default is-disabled" title="Login to Save">Save</button>
                 <button class="button is-default">Send</button>
-                <a href="example" class="button is-info">Create</a>
+                <button class="button is-info">Create</button>
             </div>
         </form>
     </div>
