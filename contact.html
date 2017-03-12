@@ -4,13 +4,16 @@ title: Contact Page
 active: contact
 ---
 
-<div id="main">
-    <div class="header">
-        <h1>{{ site.title }}</h1>
-        <h2>{{ page.title }}</h2>
+<section class="section">
+    <div class="container container-narrow">
+        <div class="heading">
+            <h1 class="title">Contact {{ site.title }}</h1>
+        </div>
     </div>
+</section>
 
-    <div class="content">
+<section class="section">
+    <div class="container container-narrow">
         {% include common/contact.html %}
     </div>
-</div>
+</section>
