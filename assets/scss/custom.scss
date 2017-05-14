@@ -30,6 +30,7 @@ $fontBasePrimary: 'Open Sans', Helvetica, Arial, sans-serif;
 $fontPrintPrimary: 'Bree Serif', Times, serif;
 @import url(http://fonts.googleapis.com/css?family=Inconsolata);
 $fontMonoPrimary: 'Inconsolata', Courier, monospace;
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* colors
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -44,10 +45,14 @@ $colorPrimary: #222222;
 $colorSecondary: #a3a380;
 $colorHighlightPrimary: #ddd;
 $colorHighlightSecondary: #eee;
+$colorHyperlink: #3273dc;
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* pixels
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 $menuWidth: 150px;
+$globalBorderRadius: 0px;
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* resets
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -59,6 +64,7 @@ body {
 p {
     font-size: 1.2em;
     line-height: 1.5em;
+    padding-bottom: .5em;
 }
 
 h1,
@@ -81,6 +87,21 @@ pre {
     text-transform: none;
 }
 
+.input {
+    border-radius: $globalBorderRadius;
+    box-shadow: none;
+}
+
+.box {
+    border-radius: $globalBorderRadius;
+}
+
+.section {
+    // padding: 3rem 1.5rem;
+    padding: 0;
+}
+
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* custom
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -88,15 +109,22 @@ pre {
     max-width: 50%;
 }
 
+.main-content {
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+}
+
 @media screen and (max-width: 999px) {
     .container-narrow {
         max-width: 100%;
+        margin-left: .5em;
+        margin-right: .5em;
     }
 }
 
 .push-right {
     float: right;
-    right: 0;
+    // right: 0;
 }
 
 footer {
@@ -109,4 +137,8 @@ footer.hero p {
 
 footer.hero a, footer.hero a:active, footer.hero a:visited {
     color: $colorHighlightSecondary;
+}
+
+.page-title {
+    padding: 3em 2em;
 }

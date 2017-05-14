@@ -21,13 +21,9 @@ sass assets/scss/custom.scss:assets/css/custom.min.css --style compressed
 /* fonts
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* common or base font */
-@import url(http://fonts.googleapis.com/css?family=Dosis);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 /* secondary or print font */
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
-@import url(http://fonts.googleapis.com/css?family=Raleway);
-/* font for script, cursive, or fancy rendering */
-@import url(http://fonts.googleapis.com/css?family=Kaushan+Script);
-/* technical, typewriter, monospace font typically used for pre or code tags */
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
 @import url(http://fonts.googleapis.com/css?family=Inconsolata);
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* colors
@@ -36,34 +32,47 @@ sass assets/scss/custom.scss:assets/css/custom.min.css --style compressed
 /*pale white*/
 /*dark slate*/
 /*black-gray*/
-/*steel blue*/
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* pixels
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* resets
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-* { margin: 0; padding: 0; }
+body { color: #001; font-family: "Open Sans", Helvetica, Arial, sans-serif; }
 
-html, body { height: 100%; }
+p { font-size: 1.2em; line-height: 1.5em; padding-bottom: .5em; }
 
-body { font-family: "Dosis", Helvetica, Arial, sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-family: "Bree Serif", Times, serif; }
 
-p, ul, ol { font-size: 1.25rem; font-weight: 100; font-family: "Dosis", Helvetica, Arial, sans-serif; line-height: 1.5rem; }
+code, pre { font-family: "Inconsolata", Courier, monospace; }
 
-/* links */
-a { color: #374956; }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* framework overrides
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.heading { text-transform: none; }
 
-a:hover { color: #00005e; text-decoration: none; }
+.input { border-radius: 0px; box-shadow: none; }
 
-a:visited { color: #374956; }
+.box { border-radius: 0px; }
 
-.content { border-top: 3em solid #001; }
+.section { padding: 0; }
 
-.body-navbar-padding { margin-top: 4em; }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* custom
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.container-narrow { max-width: 50%; }
 
-/*****************************************************************************/
-/* Bootstrap overrides
-/*****************************************************************************/
-.container-full { margin: 0 auto; width: 100%; padding-left: 0rem; padding-right: 0rem; margin-left: 0rem; margin-right: 0rem; }
+.main-content { padding-top: 2.5em; padding-bottom: 2.5em; }
 
-.container-narrow { width: 760px; margin-right: auto; margin-left: auto; }
+@media screen and (max-width: 999px) { .container-narrow { max-width: 100%; margin-left: .5em; margin-right: .5em; } }
+.push-right { float: right; }
+
+footer { margin-top: 3em; }
+
+footer.hero p { color: #a3a380; }
+
+footer.hero a, footer.hero a:active, footer.hero a:visited { color: #eee; }
+
+.page-title { padding: 3em 2em; }
 
 /*# sourceMappingURL=custom.css.map */
