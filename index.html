@@ -1,31 +1,36 @@
 ---
 layout: default
 active: home
+title: Bramblebeard
+subtitle: Securely shove your secrets in the brambly beard.
 ---
-
-<section class="section header">
-    <div class="container container-narrow">
-        <div class="heading">
-            <h1 class="title">{{ site.title }}</h1>
-            <h2 class="subtitle">{{ site.tagline }}</h2>
-        </div>
-    </div>
-</section>
 
 <section class="section">
     <div class="container container-narrow">
-        <form action="example">
-            <div class="control">
-                <textarea class="textarea" placeholder="Enter your secret here ..." required="required"></textarea>
+        <form action="example" class="box">
+
+            <div class="field">
+                <div class="control">
+                    <textarea class="textarea" placeholder="Enter your secret here ..." required="required"></textarea>
+                </div>
             </div>
-            <div class="control">
-                <input class="input" type="text" placeholder="Optionally, provide a password ...">
+            <!-- /.field -->
+
+            <div class="field">
+                <div class="control">
+                    <input class="input" type="text" placeholder="Optionally, provide a password ...">
+                </div>
             </div>
-            <div class="control push-right">
-                <button class="button is-default is-disabled" title="Login to Save">Save</button>
-                <button class="button is-default">Send</button>
-                <button class="button is-info">Create</button>
+            <!-- /.field -->
+
+            <div class="field">
+                <div class="control">
+                    <button class="button is-primary" title="Login to Save">Save</button>
+                    <button class="button is-default">Send Link</button>
+                    <button class="button is-default" disabled>Create (must be logged in)</button>
+                </div>
             </div>
+            <!-- /.field -->
         </form>
     </div>
 </section>

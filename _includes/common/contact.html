@@ -1,26 +1,49 @@
-<label class="label">Name</label>
-<p class="control">
-    <input class="input" type="text" placeholder="First Last">
-</p>
-<label class="label">Email</label>
-<p class="control">
-    <input class="input" type="email" placeholder="you@domain.com" value="">
-</p>
-<label class="label">Subject</label>
-<p class="control">
-    <span class="select">
-    <select>
-        <option>Say hello</option>
-        <option>Report issue</option>
-        <option>Miscellaneous</option>
-    </select>
-  </span>
-</p>
-<label class="label">Message</label>
-<p class="control">
-    <textarea class="textarea" placeholder="Share your hopes and dreams here."></textarea>
-</p>
-<div class="control push-right">
-    <a href="/" class="button is-link">Cancel</a>
-    <button class="button is-info">Send</button>
-</div>
+
+<form action="contact" class="box">
+
+    <div class="field">
+        <div class="control">
+            <label class="label">Name</label>
+            <input class="input" type="text" placeholder="First Last" value="" required="required">
+        </div>
+    </div>
+    <!-- /.field -->
+
+    <div class="field">
+        <div class="control">
+            <label class="label">Email</label>
+            <input class="input" type="email" placeholder="you@domain.com" value="" required="required">
+        </div>
+    </div>
+    <!-- /.field -->
+
+    <div class="field">
+        <label class="label">Subject</label>
+        <div class="control">
+            <span class="select">
+                <select>
+                    <option>Say hello</option>
+                    <option>Report issue</option>
+                    <option>Miscellaneous</option>
+                </select>
+              </span>
+        </div>
+    </div>
+    <!-- /.field -->
+
+    <div class="field">
+        <div class="control">
+            <label class="label">Message</label>
+            <textarea class="textarea" placeholder="Share your hopes and dreams here." required="required"></textarea>
+        </div>
+    </div>
+    <!-- /.field -->
+
+    <div class="field">
+        <div class="control">
+        <button class="button is-primary">Send</button>
+        <a href="/" class="button is-default">Cancel</a>
+        </div>
+    </div>
+    <!-- /.field -->
+</form>
