@@ -29,7 +29,6 @@ sass assets/scss/custom.scss:assets/css/custom.min.css --style compressed
 /* colors
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* base white or black colors or variants */
-/*pale white*/
 /*dark slate*/
 /*black-gray*/
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -53,7 +52,7 @@ code, pre { font-family: "Inconsolata", Courier, monospace; }
 
 .input { border-radius: 0px; box-shadow: none; }
 
-.box { border-radius: 0px; }
+.box { border-radius: 0px; background: whitesmoke; }
 
 .section { padding: 0; }
 

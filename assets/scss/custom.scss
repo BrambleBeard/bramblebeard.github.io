@@ -36,7 +36,7 @@ $fontMonoPrimary: 'Inconsolata', Courier, monospace;
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* base white or black colors or variants */
 $colorLight: #fdfdfd;
-/*pale white*/
+$colorPale: whitesmoke;
 $colorDark: #001;
 $colorBlack: #27343d;
 /*dark slate*/
@@ -94,6 +94,7 @@ pre {
 
 .box {
     border-radius: $globalBorderRadius;
+    background: $colorPale;
 }
 
 .section {
