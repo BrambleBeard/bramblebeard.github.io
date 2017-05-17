@@ -74,4 +74,8 @@ footer.hero a, footer.hero a:active, footer.hero a:visited { color: #eee; }
 
 .page-title { padding: 3em 2em; }
 
+.has-landing-page-image { background-color: #F62459; background-image: linear-gradient(rgba(9, 48, 40, 0.6), rgba(35, 122, 87, 0.6)), linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1468499419136-228128db8f7a?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=); }
+
+.hero.has-landing-page-image p { color: whitesmoke; }
+
 /*# sourceMappingURL=custom.css.map */
