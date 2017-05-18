@@ -7,9 +7,7 @@ subtitle: Securely shove your secrets in the brambly beard.
 
 <section class="hero is-fullheight has-landing-page-image">
     <div class="hero-head">
-        <div class="container">
-            {% include framing/navigation.html %}
-        </div>
+        {% include framing/navigation.html %}
     </div>
 
     <div class="hero-body">
@@ -34,15 +32,15 @@ subtitle: Securely shove your secrets in the brambly beard.
 
                         <div class="field">
                             <div class="control">
-                                <button class="button is-primary" title="Login to Save">Save</button>
-                                <button class="button is-default">Send Link</button>
-                                <button class="button is-default" disabled>Create (must be logged in)</button>
+                                <button class="button is-primary" title="Create Disposable Secret"><i class="fa fa-check"></i>Create</button>
+                                <a href="auth" class="button is-default" title="Save Secret"><i class="fa fa-lock"></i>Save</a>
                             </div>
                         </div>
                         <!-- /.field -->
                     </form>
                 </div>
                 <div class="column is-5 is-offset-1">
+                    <h2 class="title is-2">Title of Section</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quod at, dolorem deserunt recusandae nobis delectus ex tenetur alias, velit aliquid voluptatum eligendi qui, vitae rem reiciendis libero vero porro!</p>
                 </div>
             </div>
