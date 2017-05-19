@@ -24,6 +24,7 @@
   "dependencies": {
     "bulma": "^0.4.1",
     "vue": "^2.3.3",
-    "fontawesome": "^4.7.0"
+    "fontawesome": "^4.7.0",
+    "tinymce": "^4.6.1"
   }
 }
