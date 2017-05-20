@@ -80,6 +80,14 @@ code,
 pre {
     font-family: $fontMonoPrimary;
 }
+
+a {
+    color: lighten( $colorHyperlink, 15% );
+}
+
+a:hover, a:visited {
+    color: $colorHyperlink;
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* framework overrides
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -148,10 +156,6 @@ footer {
 
 footer.hero p {
     color: $colorSecondary;
-}
-
-footer.hero a, footer.hero a:active, footer.hero a:visited {
-    color: $colorHighlightSecondary;
 }
 
 .page-title {

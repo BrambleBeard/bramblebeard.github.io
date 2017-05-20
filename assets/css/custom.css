@@ -45,6 +45,10 @@ h1, h2, h3, h4, h5, h6 { font-family: "Bree Serif", Times, serif; }
 
 code, pre { font-family: "Inconsolata", Courier, monospace; }
 
+a { color: #73a0e7; }
+
+a:hover, a:visited { color: #3273dc; }
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* framework overrides
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -75,8 +79,6 @@ code, pre { font-family: "Inconsolata", Courier, monospace; }
 footer { margin-top: 3em; }
 
 footer.hero p { color: #a3a380; }
-
-footer.hero a, footer.hero a:active, footer.hero a:visited { color: #eee; }
 
 .page-title { padding: 3em 2em; }
 
