@@ -6,14 +6,14 @@ subtitle: Securely shove your secrets in the brambly beard.
 ---
 
 <section class="hero is-fullheight has-landing-page-image">
-    <div class="hero-head">
-        {% include framing/navigation.html %}
+    <div class="hero-head has-text-centered">
+        <h2 class="title is-1">{{ site.title }}</h2>
     </div>
 
     <div class="hero-body">
-        <div class="container has-text-centered">
+        <div class="container">
             <div class="columns">
-                <div class="column is-6">
+                <div class="column is-7">
                     <form action="example" class="boxless">
 
                         <div class="field">
@@ -25,7 +25,7 @@ subtitle: Securely shove your secrets in the brambly beard.
 
                         <div class="field">
                             <div class="control">
-                                <input class="input" type="text" placeholder="Optionally, provide a password ...">
+                                <input class="input" type="password" placeholder="Optionally, provide a password ...">
                             </div>
                         </div>
                         <!-- /.field -->
@@ -39,11 +39,37 @@ subtitle: Securely shove your secrets in the brambly beard.
                         <!-- /.field -->
                     </form>
                 </div>
-                <div class="column is-5 is-offset-1">
-                    <h2 class="title is-2">{{ site.title }}</h2>
-                    <p>Enter your secret information &mdash; passwords, connection strings, secret messagees, etc. and share a unique expiring link.  This will keep your private information out of your saved and logged email.</p>
+                <div class="column is-5">
+                    <h2 class="title is-3">{{ site.tagline }}</h2>
+                    <p>Enter your secret information &mdash; passwords, connection strings, secret messages, etc. and share a unique expiring link.  This will keep your private information out of your saved and logged email.</p>
+                    <p><a href="/auth">Sign-in or Sign-up</a></p>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero is-default is-medium">
+    <div class="hero-body">
+        <div class="container container-narrow">
+            <h1 class="title">Why use {{ site.title }}?</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque delectus recusandae error distinctio ratione provident, eligendi. Voluptates quo distinctio perspiciatis delectus nesciunt sequi aspernatur, voluptatum dolorem quidem eaque, consequuntur et.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque delectus recusandae error distinctio ratione provident, eligendi. Voluptates quo distinctio perspiciatis delectus nesciunt sequi aspernatur, voluptatum dolorem quidem eaque, consequuntur et.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<section class="hero is-primary is-medium">
+    <div class="hero-body">
+        <div class="container container-narrow">
+            <h1 class="title">Feature Summary</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque delectus recusandae error distinctio ratione provident, eligendi. Voluptates quo distinctio perspiciatis delectus nesciunt sequi aspernatur, voluptatum dolorem quidem eaque, consequuntur et.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque delectus recusandae error distinctio ratione provident, eligendi. Voluptates quo distinctio perspiciatis delectus nesciunt sequi aspernatur, voluptatum dolorem quidem eaque, consequuntur et.
+            </p>
         </div>
     </div>
 </section>
