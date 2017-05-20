@@ -6,44 +6,45 @@ title: Password Generator
 
 <section class="section">
     <div class="container container-narrow">
-        <nav class="level box">
+        <div class="box">
             <!-- Left side -->
-            <div class="level-left">
-                <h3>h$hBHL$Ky6H7x7,9^</h3>
-            </div>
+            <nav class="level box">
+                <h3 class="title is-2 has-text-centered">h$hBHL$Ky6H7x7,9^</h3>
+            </nav>
 
-            <!-- Right side -->
-            <div class="level-right">
-                <p class="level-item"><a href="#" class="">Re-generate</a></p>
-                <p class="level-item"><a href="#" class="button is-primary">Copy</a></p>
-            </div>
-        </nav>
+            <form action="example">
+                <div class="field">
+                    <label class="label">Length of Password</label>
+                    <p class="control">
+                        <input class="input" type="number" name="passwordLength" min="4" max="64" value="12">
+                    </p>
+                </div>
+                <!-- /.field -->
 
-        <form action="example" class="box">
-            <div class="field">
-                <label class="label">Length of Password</label>
-                <p class="control">
-                    <input class="input" type="number" name="passwordLength" min="4" max="64" value="12">
-                </p>
-            </div>
-            <!-- /.field -->
+                <div class="field">
+                    <label class="label">How many Digits?</label>
+                    <p class="control">
+                        <input class="input" type="number" name="passwordLength" min="0" max="32" value="0">
+                    </p>
+                </div>
+                <!-- /.field -->
 
-            <div class="field">
-                <label class="label">How many Digits?</label>
-                <p class="control">
-                    <input class="input" type="number" name="passwordLength" min="0" max="32" value="0">
-                </p>
-            </div>
-            <!-- /.field -->
-
-            <div class="field">
-                <label class="label">How many Special Characters?</label>
-                <p class="control">
-                    <input class="input" type="number" name="passwordLength" min="0" max="32" value="0">
-                </p>
-            </div>
-            <!-- /.field -->
-        </form>
-
+                <div class="field">
+                    <label class="label">How many Special Characters?</label>
+                    <p class="control">
+                        <input class="input" type="number" name="passwordLength" min="0" max="32" value="0">
+                    </p>
+                </div>
+                <div class="field is-grouped">
+                    <p class="control">
+                        <a href="">Regenerate</a>
+                    </p>
+                    <p class="control">
+                        <button class="button is-primary">Copy</button>
+                    </p>
+                </div>
+                <!-- /.field -->
+            </form>
+        </div>
     </div>
 </section>
