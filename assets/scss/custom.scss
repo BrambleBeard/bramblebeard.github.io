@@ -23,8 +23,8 @@ sass assets/scss/custom.scss:assets/css/custom.min.css --style compressed
 /* fonts
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* common or base font */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-$fontBasePrimary: 'Open Sans', Helvetica, Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,900');
+$fontBasePrimary: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 /* secondary or print font */
 @import url(http://fonts.googleapis.com/css?family=Bree+Serif);
 $fontPrintPrimary: 'Bree Serif', Times, serif;
@@ -81,6 +81,14 @@ pre {
     font-family: $fontMonoPrimary;
 }
 
+p {
+    font-family: $fontBasePrimary;
+    font-weight: 100;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    padding-bottom: .5em;
+}
+
 a {
     color: lighten( $colorHyperlink, 15% );
 }
@@ -123,6 +131,29 @@ a:hover, a:visited {
 
 .hero.has-landing-page-image .title {
     color: $colorLight;
+}
+
+.hero-title {
+    font-family: $fontBasePrimary;
+    color: $colorLight;
+    text-shadow: 2px 2px 2px $colorDark;
+    font-size: 5em;
+    font-weight: 800;
+    padding-top: .5em;
+}
+
+@media screen and (max-width: 999px) {
+    .hero-title {
+        font-size: 3em;
+        padding-top: .25em;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .hero-title {
+        font-size: 2em;
+        padding-top: .25em;
+    }
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

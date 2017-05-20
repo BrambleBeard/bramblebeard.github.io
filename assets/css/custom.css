@@ -21,7 +21,7 @@ sass assets/scss/custom.scss:assets/css/custom.min.css --style compressed
 /* fonts
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* common or base font */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,900");
 /* secondary or print font */
 @import url(http://fonts.googleapis.com/css?family=Bree+Serif);
 @import url(http://fonts.googleapis.com/css?family=Inconsolata);
@@ -37,13 +37,15 @@ sass assets/scss/custom.scss:assets/css/custom.min.css --style compressed
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* resets
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-body { color: #001; font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+body { color: #001; font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; }
 
 p { font-size: 1.2em; line-height: 1.5em; padding-bottom: .5em; }
 
 h1, h2, h3, h4, h5, h6 { font-family: "Bree Serif", Times, serif; }
 
 code, pre { font-family: "Inconsolata", Courier, monospace; }
+
+p { font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; font-weight: 100; font-size: 1.1em; line-height: 1.4em; padding-bottom: .5em; }
 
 a { color: #73a0e7; }
 
@@ -66,6 +68,10 @@ a:hover, a:visited { color: #3273dc; }
 
 .hero.has-landing-page-image .title { color: #fdfdfd; }
 
+.hero-title { font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; color: #fdfdfd; text-shadow: 2px 2px 2px #001; font-size: 5em; font-weight: 800; padding-top: .5em; }
+
+@media screen and (max-width: 999px) { .hero-title { font-size: 3em; padding-top: .25em; } }
+@media screen and (max-width: 639px) { .hero-title { font-size: 2em; padding-top: .25em; } }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* custom
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
