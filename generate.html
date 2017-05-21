@@ -7,12 +7,13 @@ title: Password Generator
 <section class="section">
     <div class="container container-narrow">
         <div class="box">
-            <!-- Left side -->
-            <nav class="level box">
-                <h3 class="title is-2 has-text-centered">h$hBHL$Ky6H7x7,9^</h3>
-            </nav>
+            <form action="generate">
 
-            <form action="example">
+                <div class="notification is-warning">
+                    <h3 class="title is-2 has-text-centered">h$hBHL$Ky6H7x7,9^</h3>
+                </div>
+                <!-- /.notification -->
+
                 <div class="field">
                     <label class="label">Length of Password</label>
                     <p class="control">
@@ -35,15 +36,18 @@ title: Password Generator
                         <input class="input" type="number" name="passwordLength" min="0" max="32" value="0">
                     </p>
                 </div>
+                <!-- /.field -->
+
                 <div class="field is-grouped">
                     <p class="control">
-                        <a href="">Regenerate</a>
+                        <button class="button is-warning">Regenerate</button>
                     </p>
                     <p class="control">
                         <button class="button is-primary">Copy</button>
                     </p>
                 </div>
                 <!-- /.field -->
+
             </form>
         </div>
     </div>
