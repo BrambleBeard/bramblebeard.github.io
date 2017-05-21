@@ -77,7 +77,7 @@ a:hover, a:visited { color: #3273dc; }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .container-narrow { max-width: 50%; }
 
-.main-content { padding-top: 2.5em; padding-bottom: 2.5em; }
+.main-content { padding-top: 1.75em; padding-bottom: 2em; }
 
 @media screen and (max-width: 999px) { .container-narrow { max-width: 100%; margin-left: .5em; margin-right: .5em; } }
 .push-right { float: right; }
@@ -86,7 +86,7 @@ footer { margin-top: 3em; }
 
 footer.hero p { color: #a3a380; }
 
-.page-title { padding: 3em 2em; }
+.page-title { padding: 1.75em 1em; }
 
 .has-landing-page-image { background-color: #F62459; background-image: linear-gradient(rgba(9, 48, 40, 0.6), rgba(35, 122, 87, 0.6)), linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1468499419136-228128db8f7a?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=); }
 
