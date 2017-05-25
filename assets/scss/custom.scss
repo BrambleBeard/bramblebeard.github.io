@@ -122,6 +122,9 @@ a:hover, a:visited {
     color: whitesmoke;
 }
 
+.hero.has-landing-page-image a {
+    color: $colorSecondary;
+}
 
 .hero.has-landing-page-image .nav {
     background: $colorPale;
@@ -140,6 +143,10 @@ a:hover, a:visited {
     font-size: 5em;
     font-weight: 800;
     padding-top: .5em;
+}
+
+.hero.is-dark a:not(.button) {
+    color: lighten( $colorHyperlink, 12% );
 }
 
 @media screen and (max-width: 999px) {
@@ -186,7 +193,7 @@ footer {
 }
 
 footer.hero p {
-    color: $colorSecondary;
+    color: $colorPale;
 }
 
 .page-title {
