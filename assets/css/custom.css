@@ -64,6 +64,8 @@ a:hover, a:visited { color: #3273dc; }
 
 .nav-item img { padding-right: 1em; }
 
+.nav { margin-bottom: 2em; }
+
 .hero.has-landing-page-image p { color: whitesmoke; }
 
 .hero.has-landing-page-image a { color: #a3a380; }
