@@ -14,25 +14,25 @@ subtitle: Securely shove your secrets in the brambly beard.
         <div class="container">
             <div class="columns">
                 <div class="column is-7">
-                    <form action="example" class="boxless">
+                    <form action="/index.html" method="post" class="boxless">
 
                         <div class="field">
                             <div class="control">
-                                <textarea class="textarea" placeholder="Enter your secret here ..." required="required"></textarea>
+                                <textarea class="textarea" name="secret" placeholder="Enter your secret here ..." required="required"></textarea>
                             </div>
                         </div>
                         <!-- /.field -->
 
                         <div class="field">
                             <div class="control">
-                                <input class="input" type="password" placeholder="Optionally, provide a password ...">
+                                <input class="input" name="password" type="password" placeholder="Optionally, provide a password ...">
                             </div>
                         </div>
                         <!-- /.field -->
 
                         <div class="field">
                             <div class="control">
-                                <button class="button is-primary" title="Create Disposable Secret"><i class="fa fa-check"></i>Create</button>
+                                <button type="submit" name="submit" class="button is-primary" title="Create Disposable Secret"><i class="fa fa-check"></i>Create</button>
                                 <a href="auth" class="button is-default" title="Save Secret"><i class="fa fa-lock"></i>Save</a>
                             </div>
                         </div>
