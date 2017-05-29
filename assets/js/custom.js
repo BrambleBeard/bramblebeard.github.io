@@ -1,6 +1,6 @@
 // Load TinyMCE
 tinymce.init({
-  selector: 'textarea',
+  // selector: 'textarea',
   height: 200,
   menubar: false,
   plugins: "insertdatetime",
