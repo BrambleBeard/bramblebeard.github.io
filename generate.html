@@ -25,7 +25,7 @@ title: Password Generator
                 <div class="field">
                     <label class="label">How many Digits?</label>
                     <p class="control">
-                        <input class="input" type="number" name="passwordLength" min="0" max="32" value="0">
+                        <input id="foo" class="input" type="number" name="passwordLength" min="0" max="32" value="0">
                     </p>
                 </div>
                 <!-- /.field -->
@@ -40,10 +40,10 @@ title: Password Generator
 
                 <div class="field is-grouped">
                     <p class="control">
-                        <button class="button is-warning">Regenerate</button>
+                        <button class="button is-warning" id="randomizer">Regenerate</button>
                     </p>
                     <p class="control">
-                        <button class="button is-primary">Copy</button>
+                        <button class="button is-primary" id="copyToClipboard" data-clipboard-target="#foo">Copy</button>
                     </p>
                 </div>
                 <!-- /.field -->
