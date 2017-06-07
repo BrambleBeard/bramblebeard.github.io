@@ -7,7 +7,7 @@ title: Password Generator
 <section class="section">
     <div class="container container-narrow">
         <div class="box">
-            <form action="generate">
+            <!-- <form action="generate"> -->
 
                 <div class="notification is-warning">
                     <h3 class="title is-2 has-text-centered" id="randomString"></h3>
@@ -43,12 +43,12 @@ title: Password Generator
                         <button class="button is-warning" id="randomizer">Regenerate</button>
                     </p>
                     <p class="control">
-                        <button class="button is-primary" id="copyToClipboard" data-clipboard-target="#foo">Copy</button>
+                        <button class="button is-primary" id="copyToClipboard" data-clipboard-target="#randomString" aria-label="Copied!">Copy</button>
                     </p>
                 </div>
                 <!-- /.field -->
 
-            </form>
+            <!-- </form> -->
         </div>
     </div>
 </section>
@@ -59,9 +59,11 @@ title: Password Generator
     applyStringToId( "randomString", randomString );
 
     function randomizeString( lengthOfString ) {
-        var alnu = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        var alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        var numbers = "0123456789";
+        var special = "_-@#$%^&*!";
         var ret = Array(lengthOfString).join().split(',').map(function() {
-            return alnu.charAt(Math.floor(Math.random() * alnu.length));
+            return alpha.charAt(Math.floor(Math.random() * alpha.length));
         }).join('');
         return ret;
     }
